@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css"/>
+	<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+	<script src="/static/js/app.js"></script>
+</head>
+<body>
+	<ons-splitter>
+		<!-- The side menu -->
+		<ons-splitter-side id="menu" collapse width="220px">
+			<ons-page>
+				<ons-list>
+					<ons-list-item onclick="loadPage('home.html')">
+						Strona Główna
+					</ons-list-item>
+					<ons-list-item onclick="loadPage('grades.html'); loadGrades()">
+						Oceny
+					</ons-list-item>
+					<ons-list-item onclick="loadPage('calendar.html'); loadCalendar()">
+						Plan Lekcji
+					</ons-list-item>
+					<ons-list-item onclick="loadPage('about.html')">
+						O Projekcie
+					</ons-list-item>
+				</ons-list>
+			</ons-page>
+		</ons-splitter-side>
+
+		<!-- Everything not in the side menu -->
+		<ons-splitter-content>
+			<ons-navigator id="navigator" page="login.html"></ons-navigator>
+		</ons-splitter-content>
+	</ons-splitter>
+	<template id="specific-grade.html">
+		<ons-page id="specific-grade">
+			<ons-toolbar id="specific-grade-toolbar">
+				<ons-back-button></ons-back-button>
+				<div class="center"><div id="specific-grade-class"></div></div>
+			</ons-toolbar>
+			<div id="specific-grade-info"></div>
+			<ons-bottom-toolbar id="bottom-specific-grade-toolbar">
+				<div style="text-align: center">
+					<ons-toolbar-button>
+						<ons-icon icon="md-home" size="45px" onclick="loadPage('home.html')"></ons-icon>
+					</ons-toolbar-button>
+					<ons-toolbar-button>
+						<ons-icon icon="md-menu" size="45px" onclick="loadPage('grades.html'); loadGrades()"></ons-icon>
+					</ons-toolbar-button>
+					<ons-toolbar-button>
+						<ons-icon icon="ion-ios-calendar" size="45px"></ons-icon>
+					</ons-toolbar-button>
+				</div>
+			</ons-bottom-toolbar>
+		</ons-page>
+	</template>
+</body>
+</html>

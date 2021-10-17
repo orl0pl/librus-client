@@ -1,0 +1,29 @@
+<ons-page id="home">
+    <ons-toolbar id="home-toolbar">
+        <div class="left">
+            <ons-toolbar-button onclick="openMenu()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div></ons-icon>
+        <div class="center">Strona Główna</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-cog" spin onclick="logout()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    Hello!
+    <ons-bottom-toolbar id="bottom-home-toolbar">
+        <div style="text-align: center">
+            <ons-toolbar-button>
+                <ons-icon icon="md-home" size="45px" onclick="loadPage('home.html')"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="md-menu" size="45px" onclick="loadPage('grades.html'); loadGrades()"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="ion-ios-calendar" size="45px" onclick="loadPage('calendar.html'); loadCalendar()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-bottom-toolbar>
+</ons-page>

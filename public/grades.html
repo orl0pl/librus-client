@@ -1,0 +1,156 @@
+<ons-page id="grades">
+    <ons-toolbar id="grades-toolbar">
+        <div class="left">
+            <ons-toolbar-button onclick="openMenu()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">Oceny</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-cog" spin onclick="logout()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <ons-list id="grades-class-list">
+        <ons-list-item expandable>
+            Biologia
+            <div class="expandable-content" id="gBiologia">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Chemia
+            <div class="expandable-content" id="gChemia">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Doradztwo zawodowe
+            <div class="expandable-content" id="gDoradztwo_zawodowe">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Edukacja dla bezpieczeństwa
+            <div class="expandable-content" id="gEdukacja_dla_bezpieczeństwa">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Fizyka
+            <div class="expandable-content" id="gFizyka">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Geografia
+            <div class="expandable-content" id="gGeografia">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Godzina wychowawcza
+            <div class="expandable-content" id="gGodzina_wychowawcza">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Historia
+            <div class="expandable-content" id="gHistoria">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Informatyka
+            <div class="expandable-content" id="gInformatyka">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Języka angielski
+            <div class="expandable-content" id="gJęzyk_angielski">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Język niemiecki
+            <div class="expandable-content" id="gJęzyk_niemiecki">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Język polski
+            <div class="expandable-content" id="gJęzyk_polski">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Język rosyjski
+            <div class="expandable-content" id="gJęzyk_rosyjski">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Matematyka
+            <div class="expandable-content" id="gMatematyka">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Muzyka
+            <div class="expandable-content" id="gMuzyka">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Religia
+            <div class="expandable-content" id="gReligia">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Techniki komputerowe
+            <div class="expandable-content" id="gTechniki_komputerowe">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Terapia pedagogiczna
+            <div class="expandable-content" id="gTerapia_pedagogiczna">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            TUS
+            <div class="expandable-content" id="gTUS">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Wiedza o społeczeństwie
+            <div class="expandable-content" id="gWiedza_o_społeczeństwie">
+                Grades will be here
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Wychowanie fizyczne
+            <div class="expandable-content" id="gWychowanie_fizyczne">
+                Grades will be here
+            </div>
+        </ons-list-item>
+    </ons-list>
+    <ons-bottom-toolbar id="bottom-grades-toolbar">
+        <div style="text-align: center">
+            <ons-toolbar-button>
+                <ons-icon icon="md-home" size="45px" onclick="loadPage('home.html')"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="md-menu" size="45px" onclick="loadPage('grades.html'); loadGrades()"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="ion-ios-calendar" size="45px" onclick="loadPage('calendar.html'); loadCalendar()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-bottom-toolbar>
+</ons-page>

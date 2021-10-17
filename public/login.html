@@ -1,0 +1,20 @@
+<ons-page>
+    <div style="text-align: center; margin-top: 200px">
+        <p>
+            <ons-input id="username" placeholder="Nazwa użytkownika" modifier="underbar"></ons-input>
+        </p>
+        <p>
+            <ons-input id="password" placeholder="Hasło" type="password" modifier="underbar"></ons-input>
+        </p>
+        <p>
+            <ons-button onclick="login()">Zaloguj się</ons-button>
+        </p>
+    </div>
+    <ons-modal direction="up">
+        <div style="text-align: center">
+            <p>
+                <ons-icon icon="md-spinner" size="28px" spin></ons-icon> Proszę czekać...
+            </p>
+        </div>
+    </ons-modal>
+</ons-page>

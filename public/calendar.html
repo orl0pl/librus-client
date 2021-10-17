@@ -1,0 +1,67 @@
+<ons-page id="home">
+    <ons-toolbar id="home-toolbar">
+        <div class="left">
+            <ons-toolbar-button onclick="openMenu()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div></ons-icon>
+        <div class="center">Plan Lekcji</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-cog" spin onclick="logout()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    
+    <ons-list>
+        <ons-list-item expandable>
+            Poniedziałek
+            <div class="expandable-content" id="cMonday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Wtorek
+            <div class="expandable-content" id="cTuesday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Środa
+            <div class="expandable-content" id="cWednesday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Czwartek
+            <div class="expandable-content" id="cThursday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Piątek
+            <div class="expandable-content" id="cFriday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Sobota
+            <div class="expandable-content" id="cSaturday">
+            </div>
+        </ons-list-item>
+        <ons-list-item expandable>
+            Niedziela
+            <div class="expandable-content" id="cSunday">
+            </div>
+        </ons-list-item>
+    </ons-list>
+
+    <ons-bottom-toolbar id="bottom-home-toolbar">
+        <div style="text-align: center">
+            <ons-toolbar-button>
+                <ons-icon icon="md-home" size="45px" onclick="loadPage('home.html')"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="md-menu" size="45px" onclick="loadPage('grades.html'); loadGrades()"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button>
+                <ons-icon icon="ion-ios-calendar" size="45px" onclick="loadPage('calendar.html'); loadCalendar()"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-bottom-toolbar>
+</ons-page>
