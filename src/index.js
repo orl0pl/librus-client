@@ -72,5 +72,6 @@ app.post('/api/logout', async (req, res) => {
     }
     res.send();
 });
-
-app.listen(process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
+console.log(`Listening on http://localhost:${PORT}`);
+app.listen(PORT);
